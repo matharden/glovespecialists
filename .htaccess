@@ -1,0 +1,32 @@
+Options +FollowSymlinks
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^glovespecialists\.co\.uk [nc]
+RewriteRule ^(.*)$ http://www.glovespecialists.co.uk/$1 [r=301,nc]
+
+#SecFilterEngine Off
+#SecFilterSelective HTTP_REFERER "cialis" nolog,allow
+
+ErrorDocument 404 /errors/404.php
+ErrorDocument 403 /errors/404.php
+
+# Red Back
+RewriteRule ^(red-?back(gloves?)?/?|red-back-gloves/)$ /red-back-gloves [NC,R=301]
+RewriteRule ^red-back-gloves$ /red-back-gloves.html [L,NC]
+# Garden City
+RewriteRule ^((garden)?-?city(gloves)?/?|garden-city-gloves/)$ /garden-city-gloves [NC,R=301]
+RewriteRule ^garden-city-gloves$ /garden-city-gloves.html [L,NC]
+# Easy Fit
+RewriteRule ^(easy-?fit(gloves?)?/?|easy-fit-gardening-glove/|easy-fit-gardening-glove\.htm)$ /easy-fit-gardening-glove [NC,R=301]
+RewriteRule ^easy-fit-gardening-glove$ /easy-fit-gardening-glove.html [L,NC]
+# Offers
+RewriteRule ^offers$ /offers.html [L,NC]
+# Garden Shows
+RewriteRule ^(gardenshows/?|garden-shows/|gardenshows\.htm)$ /garden-shows [NC,R=301]
+RewriteRule ^garden-shows$ /gardenshows.html [L,NC]
+
+#<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+#Header set Cache-Control "max-age=2592000"
+#</FilesMatch>

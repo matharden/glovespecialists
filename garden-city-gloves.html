@@ -25,12 +25,13 @@
 	<div class="container">
 		<ul>
 			<li><a href="/">Home</a></li>
+			<li><a href="offers">Offers</a></li>
 			<li><a href="secondskin.htm">Second Skin</a></li>
 			<li><a href="ultraglove.htm">Ultra Glove</a></li>
 			<li><a href="easy-fit-gardening-glove">Easy Fit</a></li>
 			<li><strong>Garden City</strong></li>
 			<li><a href="red-back-gloves">Red Back Gloves</a></li>
-			<li><a href="ordernow.htm">Order Now!</a></li>
+			<!-- <li><a href="ordernow.htm">Order Now!</a></li> -->
 			<li><a href="contactus.htm">Contact Us</a></li>
 			<li><a href="garden-shows">Garden Shows</a></li>
 		</ul>
@@ -50,6 +51,11 @@
 		</form>			
 
 		<h1>NEW! Floral Garden City Gloves</h1>
+		
+		<div class="well well-sale pull-right">
+			<h1>SALE</h1>
+			<p>See <a href="offers">our Spring Offer</a>!</p>
+		</div>
 		
 		<p>Our new Garden City Gloves are wonderfully bright and light, each with a pretty flower on the back.</p>
 		
@@ -79,16 +85,20 @@
 				</tr>
 				<tr class="centre">
 					<th>Price</th>
-					<td colspan="5">all sizes &pound;4.50 each</td>
+					<td colspan="4">all sizes &pound;4.50 each</td>
 				</tr>
 			</tbody>
 		</table>
 		
 		<br />
 		
-		<div id="buy-now">
+		<div class="well">
 			
 			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				
+				<div class="well well-grey pull-right">
+					<p><strong>Please note:</strong> Spring Offer only available on the <a href="offers">Offers page</a></p>
+				</div>
 
 				<div>
 					<input type="hidden" name="on0" value="Size">
@@ -151,18 +161,17 @@
 
 		</div>
 			
-		<p><small><strong>Discounts</strong> are available when ordering six pairs and over. To get this discount please see our <a href="ordernow.htm">Order Now page</a>. You will need to print and post the form and your cheque as discounts are not available for credit/debit card orders.</small></p>
+		<!-- <p><small><strong>Discounts</strong> are available when ordering six pairs and over. To get this discount please see our <a href="ordernow.htm">Order Now page</a>. You will need to print and post the form and your cheque as discounts are not available for credit/debit card orders.</small></p> -->
 		
-		<p><small>If you wish to pay by cheque, please see the <a href="ordernow.htm">Order Now page</a>.</small></p>
+		<!-- <p><small>If you wish to pay by cheque, please see the <a href="ordernow.htm">Order Now page</a>.</small></p> -->
 
 	</div>
 	
 	<div id="secondary">
-		<div class="figure"><a href="images/garden-city-glove-all.jpg" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');cycleThru(0);return false"><img src="images/garden-city-glove-all.jpg" alt="Garden City Glove" width="219" height="219"/></a></div>
+		<div class="figure"><a href="images/garden-city-glove-all.jpg" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');cycleThru(0);return false"><img src="images/garden-city-glove-all.jpg" alt="Garden City Glove" class="thumb"/><i class="icon-zoom-in icon-white"></i></a></div>
 		<div class="col figure">
-			<a href="images/garden-city-secateurs.jpg" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');cycleThru(1);return false"><img src="images/garden-city-secateurs.jpg" alt="click to enlarge Garden City Glove" class="thumb"/></a>
-			<a href="images/garden-city-glove-closeup.jpg" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');cycleThru(2);return false"><img src="images/garden-city-glove-closeup.jpg" alt="click to enlarge Garden City Glove" class="thumb"/></a>
-			<div class="figcaption"><a href="images/garden-city-secateurs.jpg" class="zoom" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');return false">englarge image</a></div>
+			<div><a href="images/garden-city-secateurs.jpg" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');cycleThru(1);return false"><img src="images/garden-city-secateurs.jpg" alt="click to enlarge Garden City Glove" class="thumb"/><i class="icon-zoom-in icon-white"></i></a></div>
+			<div><a href="images/garden-city-glove-closeup.jpg" onclick="javascript:showHide('pop1','','show');showHide('but1','','show');cycleThru(2);return false"><img src="images/garden-city-glove-closeup.jpg" alt="click to enlarge Garden City Glove" class="thumb"/><i class="icon-zoom-in icon-white"></i></a></div>
 		</div>
 	</div>
 	
@@ -176,7 +185,7 @@
 
 
 	<div id="footer">
-		<span class="copyright">Copyright &copy;2004-2011 <a href="http://www.brainfire.co.uk/" class="external">Brainfire</a>. All rights reserved. <span class="note">Credit card icons by <a href="http://graphicpeel.com/" target="_blank" class="external">Graphicpeel, Louis Harboe</a>.</span>
+		<span class="copyright">Copyright &copy;2004-2012 <a href="http://www.brainfire.co.uk/" class="external">Brainfire</a>. All rights reserved. <span class="note">Credit card icons by <a href="http://graphicpeel.com/" target="_blank" class="external">Graphicpeel, Louis Harboe</a>.</span>
 	</div>
 </div>
 <div id="pop1">
@@ -196,6 +205,7 @@ closeUpArr[1]=new Image(); closeUpArr[1].src="images/garden-city-secateurs.jpg";
 closeUpArr[2]=new Image(); closeUpArr[2].src="images/garden-city-glove-closeup.jpg";
 //-->
 </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>

@@ -242,11 +242,12 @@ html[xmlns] .clearfix {
 	display: block;
 }
 
-#pop1	{ z-index:1; position:absolute; visibility:hidden; left:50%; top:130px; margin-left:-211px; border:3px solid #000 }
+#pop1	{ z-index:1; position:absolute; visibility:hidden; left:50%; top:130px; margin-left:-211px; border:3px solid #000; box-shadow: 0px 0px 10px rgba(0,0,0,1) }
 #but1	{ z-index:2; position:absolute; visibility:hidden; left:50%; top:132px; margin-left:-216px; width:422px }
 	
 /* New Global Styles (nt) */
 .hide	{ display:none }
+.pull-right { float:right; }
 
 body.nt	{ font-size:100%; text-align:center; background:url(images/bg1.gif) repeat-x }
 
@@ -274,7 +275,7 @@ body.nt	{ font-size:100%; text-align:center; background:url(images/bg1.gif) repe
 .nt #preFooterLeft		{ clear:both }
 .nt #preFooterRight		{ margin-left:259px; height:18px; }
 
-.nt #primary	{ float:right; width:511px; background:#ece4cd }
+.nt #primary	{ float:right; padding-bottom:1em; width:511px; background:#ece4cd }
 .nt #secondary	{ float:left; width:258px }
 .nt #footer	{ background:#fff }
 
@@ -285,25 +286,54 @@ body.nt	{ font-size:100%; text-align:center; background:url(images/bg1.gif) repe
 .nt .centre td	{ text-align:center }
 
 /* Add to basket forms */
-.add-basket			{ position:relative; overflow:hidden; margin:0 20px; padding:10px; -webkit-border-radius:7px; -moz-border-radius:7px; border-radius:7px; background:#fff; }
-.nt .add-basket div	{ clear:left; margin-top:10px }
+.well				{ position:relative; overflow:hidden; margin:0 20px; padding:10px; -webkit-border-radius:7px; -moz-border-radius:7px; border-radius:7px; background:#fff; }
+.nt .well .well		{ margin-top:0; background:#eee; }
+.nt .well .well p	{ margin:0; }
+.well-sale			{ background:#f30; }
+.well-sale h1,
+.well-sale a,
+.well-sale p		{ color:#fff; margin:0; }
+.well-grey			{ width:180px; }
+
+.nt .well div		{ clear:left; margin-top:10px }
 .nt label			{ float:left; width:100px; margin:0 10px 0 0; padding:4px; text-align:right }
 .nt input,
 .nt select			{ font-size:.813em }
 .nt .submit,
 .nt .notes			{ margin-left:118px }
+.nt .static			{ display:inline-block; padding:4px 2px; font-size:.813em; }
 
-.buy-now			{ padding-top:20px; background-image: url(images/buy-now.png) -45px -45px no-repeat }
+.buy-now			{ padding-top:20px; background-image: url(images/buy-now.png); background-position:-45px -45px; background-repeat:no-repeat }
 
 #view-cart			{ float:right; margin:-100px 20px 0 }
 
 small			{ font-size:.846em }
 
-.figure		{ margin:20px 0 0 20px }
+.figure		{ margin:20px 0 0 20px; overflow:hidden }
 .figure img	{ border:1px solid #000 }
-.thumb		{ margin-right:10px; margin-bottom:10px; width:75px; height:75px }
-.figcaption	{ font-size:.686em }
-.zoom		{ padding:1px 0 1px 18px; background:url(images/icons/zoom.png) no-repeat }
+.figure div { float:left; margin-left:20px; margin-right:0; }
+.figure div:first-child { margin-left:0; }
+.figure .thumb { margin:0; width:216px; height:216px; }
+.figure div .thumb { margin:0; width:97px; height:97px; }
+.figure p { margin:0; }
+.figure i { margin-left:-17px; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("images/icons/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  *margin-right: .3em;
+}
+.icon-white { background-image: url("images/icons/glyphicons-halflings-white.png"); }
+.icon-zoom-in { background-position: -336px 0; }
+
+
 .lastUnit .figure	{ margin:20px 0 20px 10px }
 .lastUnit p			{ margin:1em 10px }
 
