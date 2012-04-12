@@ -267,7 +267,7 @@
 <script src="http://slinky.local/~matharden/glovespecialists/js/gardenshows.js"></script>
 <script type="text/html" id="item_tmpl">
 	<li class="vevent passed" id="<%= name %>">
-		<p class="date"><strong>May </strong><abbr class="dtstart" title="<%= start %>">12</abbr> - <abbr class="dtend" title="<%= end %>">16</abbr><span class="year"> 2011</span></p>
+		<p class="date"><strong><%= months[new Date(start).getMonth()].substr(0,3) %> </strong><abbr class="dtstart" title="<%= start %>"><%= new Date(start).getDate() %></abbr> - <abbr class="dtend" title="<%= end %>"><%= new Date(end).getDate() %></abbr><span class="year"> <%= new Date(start).getFullYear() %></span></p>
 		<h2 class="summary"><span class="hide">Glove Specialists at the </span><%= name %></h2>
 		<p class="location"><%= location %></p>
 		<p class="hide"><a class="url" href="http://www.glovespecialists.co.uk/gardenshows.htm#<%= name.split(' ').join('-') %>"><%= name %></a></p>
@@ -283,7 +283,7 @@
 	
 	var h = $("#events li.passed h2");
 	h.siblings().hide();
-
+	var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 	$(document).ready(function(){
 		h
 			.attr('title', 'show/hide this event')
@@ -291,9 +291,9 @@
 				$(this).siblings().slideToggle();
 			});
 		
-		var show_user = tmpl("item_tmpl"), html = "";
+		var event = tmpl("item_tmpl"), html = "";
 		for ( var i = 0; i < shows2012.length; i++ ) {
-		  html += show_user( shows2012[i] );
+		  html += event( shows2012[i] );
 		}
 		$('#events').prepend(html);
 	});

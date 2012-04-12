@@ -80,7 +80,7 @@ var shows2012 = [
 	name:		'Highnam Court Spring Fair',
 	start:		'2012/04/28',
 	end:		'2012/04/29',
-	location:	'Two miles west of central Gloucester [A40],  GL2 8DP',
+	location:	'Two miles west of central Gloucester [A40], GL2 8DP',
 	stand:		'',
 	notes:		''
 },
@@ -88,7 +88,7 @@ var shows2012 = [
 	name:		'Malvern Spring Gardening Show',
 	start:		'2012/05/10',
 	end:		'2012/05/13',
-	location:	'Three Counties Showground, Malvern  WR13 6NW',
+	location:	'Three Counties Showground, Malvern, WR13 6NW',
 	stand:		'In the Gardeners Shopping Pavilion',
 	notes:		'Thursday 10 May RHS members only'
 },
@@ -96,7 +96,7 @@ var shows2012 = [
 	name:		'Devon County Show',
 	start:		'2012/05/17',
 	end:		'2012/05/19',
-	location:	'WestPoint Showgrounds, Clyst St Mary, Exeter,  EX5 1DJ',
+	location:	'WestPoint Showgrounds, Clyst St Mary, Exeter, EX5 1DJ',
 	stand:		'At entrance of Floral Marquee',
 	notes:		''
 },
@@ -104,14 +104,14 @@ var shows2012 = [
 	name:		'Kent Garden Show',
 	start:		'2012/06/02',
 	end:		'2012/06/05',
-	location:	'Kent Showgrounds, Detling, Maidstone  ME14 3JF',
+	location:	'Kent Showgrounds, Detling, Maidstone, ME14 3JF',
 	stand:		'In the covered hall',
 	notes:		''
 },
 {
 	name:		'The Garden Show at Stansted Park',
 	start:		'2012/06/15',
-	end:		'2012/00/17',
+	end:		'2012/06/17',
 	location:	'Rowland’s Castle, near Chichester, PO9 6DX',
 	stand:		'',
 	notes:		''
@@ -121,14 +121,14 @@ var shows2012 = [
 	start:		'2012/08/03',
 	end:		'2012/08/04',
 	location:	'Vivary Park, Taunton, TA1 3JW',
-	stand:		'Outside the Flower Tent next  to the Main Ring',
+	stand:		'Outside the Flower Tent next to the Main Ring',
 	notes:		''
 },
 {
 	name:		'Shrewsbury Flower Show',
 	start:		'2012/08/10',
 	end:		'2012/08/10',
-	location:	'Quarry Park, Shrewsbury,  SY1 1RN',
+	location:	'Quarry Park, Shrewsbury, SY1 1RN',
 	stand:		'At the top of  Avenue B, near the Flower Marquee',
 	notes:		''
 },
@@ -144,7 +144,7 @@ var shows2012 = [
 	name:		'Malvern Autumn Country and Garden Show',
 	start:		'2012/09/29',
 	end:		'2012/09/30',
-	location:	'Three Counties Showground, Malvern  WR13 6NW',
+	location:	'Three Counties Showground, Malvern, WR13 6NW',
 	stand:		'In The Countryside Shopping Pavilion',
 	notes:		''
 }
