@@ -123,9 +123,8 @@
 					<input type="submit" name="submit" value="Add to Cart"/>
 				</div>
 
-				<!-- <input type="hidden" name="add" value="1"/>
-				<input type="hidden" name="cmd" value="_cart"/> -->
-				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="add" value="1"/>
+				<input type="hidden" name="cmd" value="_cart"/>
 
 				<input type="hidden" name="business" value="orders@glovespecialists.co.uk"/>
 				<input type="hidden" name="item_name" value="Spring Offer 2012"/>
@@ -283,12 +282,12 @@ $(function(){
 			freeness = 1;
 			amount-= freeness;
 		}
-		var total = (amount*4.5)+post;
+		var total = amount*4.5;
 		
 		$('span .pairs').text(amount);
 		$('span .free').text(freeness);
 		$('form [name="amount"]').val(total);
-		$('#total').text('£'+total.toFixed(2));
+		$('#total').text('£'+(total+post).toFixed(2));
 	};
 	
 	function rgb2hex(rgb) {
