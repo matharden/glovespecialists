@@ -75,79 +75,41 @@ function jsDate(strDate) {
 })();
 
   
-var shows2012 = [
+var shows = [
 {
-	name:		'Highnam Court Spring Fair',
-	start:		'2012/04/28',
-	end:		'2012/04/29',
-	location:	'Two miles west of central Gloucester [A40], GL2 8DP',
-	stand:		'',
-	notes:		''
+name: 'Malvern Spring Gardening Show',
+start: '2013-05-09',
+end: '2013-05-12',
+notes: 'Thursday is for <abbr title="Royal Horticultural Society">RHS</abbr> members only. Friday to Sunday is open to the general public.',
+stand: 'In the Gardeners Shopping Pavilion',
+location: 'Three Counties Showground, Malvern WR13 6NW'
 },
 {
-	name:		'Malvern Spring Gardening Show',
-	start:		'2012/05/10',
-	end:		'2012/05/13',
-	location:	'Three Counties Showground, Malvern, WR13 6NW',
-	stand:		'In the Gardeners Shopping Pavilion',
-	notes:		'Thursday 10 May RHS members only'
+name: 'Devon County Show',
+start: '2013-05-16',
+end: '2013-05-18',
+stand: 'At entrance of Floral Marquee, WestPoint',
+location: 'Showgrounds, Clyst St Mary, Exeter, EX5 1DJ'
 },
 {
-	name:		'Devon County Show',
-	start:		'2012/05/17',
-	end:		'2012/05/19',
-	location:	'WestPoint Showgrounds, Clyst St Mary, Exeter, EX5 1DJ',
-	stand:		'At entrance of Floral Marquee',
-	notes:		''
+name: 'Taunton Flower Show',
+start: '2013-08-02',
+end: '2013-08-03',
+stand: 'Outside the Flower Tent next to the Main Ring',
+location: 'Vivary Park, Taunton, TA1 3JW'
 },
 {
-	name:		'Kent Garden Show',
-	start:		'2012/06/02',
-	end:		'2012/06/05',
-	location:	'Kent Showgrounds, Detling, Maidstone, ME14 3JF',
-	stand:		'In the covered hall',
-	notes:		''
+name: 'Shrewsbury Flower Show',
+start: '2013-08-09',
+end: '2013-08-10',
+stand: 'At the top of Avenue B, near the Flower Marquee ',
+location: 'Quarry Park, Shrewsbury, SY1 1RN'
 },
 {
-	name:		'The Garden Show at Stansted Park',
-	start:		'2012/06/15',
-	end:		'2012/06/17',
-	location:	'Rowland’s Castle, near Chichester, PO9 6DX',
-	stand:		'',
-	notes:		''
-},
-{
-	name:		'Taunton Flower Show',
-	start:		'2012/08/03',
-	end:		'2012/08/04',
-	location:	'Vivary Park, Taunton, TA1 3JW',
-	stand:		'Outside the Flower Tent next to the Main Ring',
-	notes:		''
-},
-{
-	name:		'Shrewsbury Flower Show',
-	start:		'2012/08/10',
-	end:		'2012/08/10',
-	location:	'Quarry Park, Shrewsbury, SY1 1RN',
-	stand:		'At the top of  Avenue B, near the Flower Marquee',
-	notes:		''
-},
-{
-	name:		'Bath and West Flower Show [formerly National Amateur Gardening Show]',
-	start:		'2012/08/31',
-	end:		'2012/09/02',
-	location:	'Bath and West Showground, Shepton Mallet, BA4 6QN',
-	stand:		'In the Garden Inspirations Pavilion',
-	notes:		''
-},
-{
-	name:		'Malvern Autumn Country and Garden Show',
-	start:		'2012/09/29',
-	end:		'2012/09/30',
-	location:	'Three Counties Showground, Malvern, WR13 6NW',
-	stand:		'In The Countryside Shopping Pavilion',
-	notes:		''
+name: 'Malvern Autumn Country and Garden Show',
+start: '2013-09-28',
+end: '2013-09-29',
+stand: 'In The Countryside Shopping Pavilion',
+location: 'Three Counties Showground, Malvern WR13 6NW'
 }
 ];
-
-
