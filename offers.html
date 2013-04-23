@@ -70,7 +70,7 @@
 				<p>Sorry, you must have JavaScript switched-on in your browser to take advantage of this offer. If you are not sure how to do this, help is available at <a href="http://enable-javascript.com/">enable-javascript.com</a>.</p>
 			</noscript>
 
-			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="hide">
+			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="hide" id="offer-form">
 
 				<div>
 					<label>1st Pair</label>
@@ -127,7 +127,7 @@
 				<input type="hidden" name="cmd" value="_cart"/>
 
 				<input type="hidden" name="business" value="orders@glovespecialists.co.uk"/>
-				<input type="hidden" name="item_name" value="Spring Offer 2012"/>
+				<input type="hidden" name="item_name" value="Spring Offer 2013"/>
 				<input type="hidden" name="item_number" value=""/>
 				<input type="hidden" name="amount" value="1"/>
 				<input type="hidden" name="no_shipping" value="2"/>
@@ -208,7 +208,8 @@ var gloves = [
 {
   "Name": "Second Skin",
   "Code": "SS",
-  "Sizes": ["XS","S","M","L","XL"]
+  "Sizes": ["XS","S","M","L","XL"],
+  "Offers": ["SP13"]
 },
 {
   "Name": "Easy Fit",
@@ -241,7 +242,8 @@ var sizeMap = {
 $(function(){
 	var html = '<option value="0">- Select Glove -</option>',
 		free = html,
-		orderCode = [];
+		orderCode = []
+		form = $('#offer-form');
 	
 	var getSizes = function (code) {
 		for (var i=0; i < gloves.length; i++) {
@@ -264,9 +266,9 @@ $(function(){
 	};
 	
 	var disable = function (el) {
-		el.attr('disabled','disabled');
-		return el;
+		return el.attr('disabled','disabled');
 	};
+
 	var enable = function (el) {
 		el.removeAttr('disabled');
 	};
@@ -286,7 +288,7 @@ $(function(){
 		
 		$('span .pairs').text(amount);
 		$('span .free').text(freeness);
-		$('form [name="amount"]').val(total);
+		$('[name="amount"]', form).val(total);
 		$('#total').text('£'+(total+post).toFixed(2));
 	};
 	
@@ -302,7 +304,7 @@ $(function(){
 		return tmpl.replace('{code}', data.Code).replace('{name}', data.Name);
 	}
 	
-	$('form').removeClass('hide');
+	form.removeClass('hide');
 	
 	for (glove in gloves) {
 		var tmpl = '<option value="{code}">{name}</option>';
@@ -313,7 +315,7 @@ $(function(){
 		html+= addItem(tmpl, gloves[glove]);
 	}
 	
-	$('form').submit(function (e) {
+	form.submit(function (e) {
 		$('.glove').each(function () {
 			var size = $(this).siblings('.size').not(':disabled');
 			
@@ -323,21 +325,17 @@ $(function(){
 				return false;
 			}
 		});
-		
 	});
+		
 	$('.glove').html(html);
 	$('.free .glove').html(free);
 	$('.glove').change(function () {
 		var glove = $(this),
 			sizes = getSizes(glove.val()),
 			size = glove.siblings('.size'),
-			next = glove.parents('div').next('div').children('.glove'),
-			nextSize = glove.parents('div').next('div').children('.size');
+			next = glove.parents('div').next('div').children('.glove');
 		
 		if (glove.val() !== '0') {
-			if (size.val() !== '0') {
-				enable(nextSize)
-			}
 			size.html(function () {
 				var html = '<option value="0">- Select Size -</option>';
 				for (var i=0; i < sizes.length; i++) {
@@ -360,7 +358,6 @@ $(function(){
 		} else {
 			disable(size);
 			disable(next);
-			disable(nextSize);
 		}
 		
 		collateGloves();
