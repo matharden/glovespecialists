@@ -114,7 +114,7 @@
 				</div>
 				<div><label>Pairs</label><span class="static"><span class="pairs"></span> @ £4.50 each</span></div>
 				<div><label>FREE Pairs</label><span class="static"><span class="free"></span></span></div>
-				<div><label>Postage</label><span class="static">£2.50</span></div>
+				<div><label>Postage</label><span class="static">£3.00</span></div>
 				<div><label>Total</label><span class="static" id="total">&nbsp;</span></div>
 				
 					<!-- <select name="os0" id="sizes"> -->
@@ -175,7 +175,7 @@
 
 
 	<div id="footer">
-		<span class="copyright">Copyright &copy;2004-2012 <a href="http://www.brainfire.co.uk/" class="external">Brainfire</a>. All rights reserved. <span class="note">Credit card icons by <a href="http://graphicpeel.com/" target="_blank" class="external">Graphicpeel, Louis Harboe</a>.</span>
+		<span class="copyright">Copyright &copy;2004-2013 <a href="http://www.brainfire.co.uk/" class="external">Brainfire</a>. All rights reserved. <span class="note">Credit card icons by <a href="http://graphicpeel.com/" target="_blank" class="external">Graphicpeel, Louis Harboe</a>.</span>
 	</div>
 </div>
 <div id="pop1">
@@ -203,7 +203,7 @@ var gloves = [
   "Name": "Ultra Glove",
   "Code": "UG",
   "Sizes": ["XS","S","M","L","XL","XXL"],
-  "Offers": ["SP12"]
+  "Offers": ["SP13"]
 },
 {
   "Name": "Second Skin",
@@ -214,13 +214,13 @@ var gloves = [
   "Name": "Easy Fit",
   "Code": "EF",
   "Sizes": ["XS","S","M","L","XL","XXL"],
-  "Offers": ["SP12"]
+  "Offers": ["SP13"]
 },
 {
   "Name": "Red Back",
   "Code": "RB",
   "Sizes": ["XS","S","M","L","XL"],
-  "Offers": ["SP12"]
+  "Offers": ["SP13"]
 },
 {
   "Name": "Garden City",
@@ -272,7 +272,7 @@ $(function(){
 	};
 	
 	var calculate = function (amount) {
-		var post = 2.5,
+		var post = 3,
 			freeness = 0;
 			
 		if (amount>=8) {
@@ -296,10 +296,6 @@ $(function(){
 	        return ("0" + parseInt(x).toString(16)).slice(-2);
 	    }
 	    return hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-	}
-	
-	getOptions = function () {
-		
 	}
 	
 	addItem = function (tmpl, data) {
