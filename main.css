@@ -159,7 +159,7 @@ input {
 	font-size:12px;
 	}
 
-.note,.copyright {
+.note {
 	font-family:arial,helvetica,sans-serif;
 	font-size:10px;
 	}
@@ -278,6 +278,8 @@ body.nt	{ font-size:100%; text-align:center; background:url(images/bg1.gif) repe
 .nt #primary	{ float:right; padding-bottom:1em; width:511px; background:#ece4cd }
 .nt #secondary	{ float:left; width:258px }
 .nt #footer	{ background:#fff }
+.nt #footer p { margin:1em 0; }
+.nt #footer p.legal { margin-top:0; padding-top:.5em; }
 
 .nt #ccards	{ margin:20px }
 
